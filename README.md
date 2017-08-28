@@ -32,6 +32,25 @@ how smart contracts. These contracts are useful because they create automated,
 programmable transactions that are immutable since they exist on the blockchain.
 
 
+DApp Build: successful, despite the following messages in javascript console(using Google Chrome) 
+	MetaMask - injected web3
+inpage.js:85 MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider 
+https://github.com/ethereum/mist/releases/tag/v0.9.0
+get @ inpage.js:85
+DevTools failed to parse SourceMap: http://localhost:3000/packages/3stack:bignumber/bignumber.browserify.js
+web3.eth.accounts
+inpage.js:85 MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider 
+https://github.com/ethereum/mist/releases/tag/v0.9.0
+get @ inpage.js:85
+(anonymous) @ VM144:1
+["0xa187f1082170d112478e689914b7b2696ed3f71c"]
+
+	The Mist release notice is nothing to worry about, but not sure why DEvTools
+could not parse the source map. Besides that the Ethereum DApp wlakthrough was
+about as straight-forward as I has assumed.
+
+
 
 Hard Problems relating to Cryptocurrency: https://github.com/ethereum/wiki/wiki/Problems
+
 
