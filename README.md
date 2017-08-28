@@ -33,22 +33,17 @@ programmable transactions that are immutable since they exist on the blockchain.
 
 
 DApp Build: successful, despite the following messages in javascript console(using Google Chrome) 
-	MetaMask - injected web3
-inpage.js:85 MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider 
+
+If you get this error ...
+MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider 
 https://github.com/ethereum/mist/releases/tag/v0.9.0
-get @ inpage.js:85
+
+Everything is fine. Ethereum is rolling out updates in the horizon. Metamask will likely deal with this on their end once Ethereum updates to a full Mist release. If not, then we still have time to address errors that come up.
+
+If you get an error like this ...
 DevTools failed to parse SourceMap: http://localhost:3000/packages/3stack:bignumber/bignumber.browserify.js
-web3.eth.accounts
-inpage.js:85 MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider 
-https://github.com/ethereum/mist/releases/tag/v0.9.0
-get @ inpage.js:85
-(anonymous) @ VM144:1
-["0xa187f1082170d112478e689914b7b2696ed3f71c"]
 
-	The Mist release notice is nothing to worry about, but not sure why DEvTools
-could not parse the source map. Besides that the Ethereum DApp wlakthrough was
-about as straight-forward as I has assumed.
-
+follow this link: https://stackoverflow.com/questions/36051891/esri-failed-to-parse-source-map
 
 
 Hard Problems relating to Cryptocurrency: https://github.com/ethereum/wiki/wiki/Problems
