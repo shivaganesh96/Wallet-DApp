@@ -45,6 +45,9 @@ DevTools failed to parse SourceMap: http://localhost:3000/packages/3stack:bignum
 
 follow this link: https://stackoverflow.com/questions/36051891/esri-failed-to-parse-source-map
 
+Finished Bundling the DApp with the meteor-build-client (its on the Ethereum DApp walkthrough). 
+Find build files in "/Users/jh/Documents/Purdue Junior Year/CS 307/build"
+
 
 Hard Problems relating to Cryptocurrency: https://github.com/ethereum/wiki/wiki/Problems
 
