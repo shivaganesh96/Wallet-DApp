@@ -25,3 +25,5 @@ ethereum:tools
 ethereum:elements
 ethereum:accounts
 ethereum:blocks
+frozeman:persistent-minimongo2
+frozeman:template-var
