@@ -32,3 +32,6 @@ how smart contracts. These contracts are useful because they create automated,
 programmable transactions that are immutable since they exist on the blockchain.
 
 
+
+Hard Problems relating to Cryptocurrency: https://github.com/ethereum/wiki/wiki/Problems
+
