@@ -1,54 +1,63 @@
-This will be where we describe the problems at hand with the way many
-financial institutions operate. Also describe how cryptocurrencies like
-Ethereum provides transparency so consumers can be fully informed(ledger concept).
-Through cryptocurrency systems such as proof-of-work transactions can be validated
-on a decentralized without third parties....
+# Ethereum Wallet Ðapp
 
-Explain how our DApp differentiates itself from other cryptos by being built on
-a reliable network, and how our smart contracts can operate on mobile and 
-why this matters. Improved usability -> increased adoption of cryptocurrency in
-the mainstream. 
+The Ethereum wallet.
 
-Explain how our main focus is not on solving the scalability problem. Although
-it would be an interesting approach, it seems infeasable considering no other
-cryptocurrency has truely solved the cryptocurrency scalability problem yet.
-Building on Ethereum has added benefits in that their team is likely to have 
-scalable DApps by the time all other crypto's are scalable in transactions.
-Therefore building on their platform is the most reasonable approach to the scaling
-problem. Assuming this project is maintained longer than project criteria say,
-it is possible that the underlying core cryptocurrency consensus algorithm can
-be altered to be more suitable for independent network scalability. Considering
-current talents of those in team-31, we all have front-end or Application development
-experience. These talents are much better suited for DApp Development which
-can be implemented entirely in front-end languages.
+[![Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
 
-Why I think Ethereum can create scalable DApps on their platform: plasma
-
-Goals: Release an official DApp on the Ethereum Blockchain that will improve
-mobile interfacing through smart contracts. This is to solve tha problem of usability
-of cryptocurrency. Considering almost no one except programmers and cryptocurrency 
-enthusiats/investors have a clue how blockchain technology works, let alone 
-how smart contracts. These contracts are useful because they create automated, 
-programmable transactions that are immutable since they exist on the blockchain.
+**NOTE** The wallet is not yet official released,
+can contain severe bugs!
 
 
-DApp Build: successful, despite the following messages in javascript console(using Google Chrome) 
+## Development
 
-If you get this error ...
-MetaMask: web3 will be deprecated in the near future in favor of the ethereumProvider 
-https://github.com/ethereum/mist/releases/tag/v0.9.0
+Start an `geth` node and and the app using meteor and open http://localhost:3000 in your browser:
 
-Everything is fine. Ethereum is rolling out updates in the horizon. Metamask will likely deal with this on their end once Ethereum updates to a full Mist release. If not, then we still have time to address errors that come up.
+    $ geth --rpccorsdomain "http://localhost:3000" --rpc --unlock <your account>
 
-If you get an error like this ...
-DevTools failed to parse SourceMap: http://localhost:3000/packages/3stack:bignumber/bignumber.browserify.js
+Starting the wallet dapp using [Meteor](https://meteor.com/install)
 
-follow this link: https://stackoverflow.com/questions/36051891/esri-failed-to-parse-source-map
+    $ cd meteor-dapp-wallet/app
+    $ meteor
 
-Finished Bundling the DApp with the meteor-build-client (its on the Ethereum DApp walkthrough). 
-Find build files in "/Users/jh/Documents/Purdue Junior Year/CS 307/build"
+Go to http://localhost:3000
 
 
-Hard Problems relating to Cryptocurrency: https://github.com/ethereum/wiki/wiki/Problems
+## Deployment
+
+To create a build version of your app run:
+    
+    // install meteor-build-client
+    $ npm install -g meteor-build-client
+
+    // bundle dapp
+    $ cd meteor-dapp-wallet/app
+    $ meteor-build-client ../build --path ""
+
+This will generate the files in the `../build` folder. Double click the index.html to start the app.
+To make routing work properly you need to build it using:
+
+    $ meteor-build-client ../build
+
+And start a local server which points with its document root into the `../build` folder,
+so that you can open the app using `http://localhost:80/`
+
+To deploy them to the **wallet.ethereum.org** site, execute these commands (from the app folder):
+
+    git checkout gh-pages
+    git merge develop
+    cd app
+    meteor-build-client ../build --path "/"
+          
+And push (or PR) your changes to the gh-pages branch.
 
 
+***
+
+## Gas usage statistics
+
+- Deploy original wallet: 1 230 162
+- Deploy wallet stub: 184 280
+- Simple Wallet transaction: 64 280
+- Multisig Wallet transaction below daily limit: 79 280
+- Multisig Wallet transaction above daily limit: 171 096
+- 1 Multisig confirmation: 48 363
