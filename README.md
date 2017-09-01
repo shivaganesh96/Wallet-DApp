@@ -1,18 +1,17 @@
-# Ethereum Wallet Ðapp
+# Wallet Ðapp
 
-The Ethereum wallet.
+A basic DApp wallet for the Ethereum Network. 
+
+	- ** NOTE ** This is not an official release. This entire code base is a work-in-progress. More updates to come in the near future! For now this can be run on a local machine, or used for learning purposes. LICENSE specifies use of the code contained in this repository.
 
 [![Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
-
-**NOTE** The wallet is not yet official released,
-can contain severe bugs!
 
 
 ## Development
 
 Start an `geth` node and and the app using meteor and open http://localhost:3000 in your browser:
 
-    $ geth --rpccorsdomain "http://localhost:3000" --rpc --unlock <your account>
+    $ geth --rpccorsdomain "http://localhost:3000" --rpc --port 0
 
 Starting the wallet dapp using [Meteor](https://meteor.com/install)
 
