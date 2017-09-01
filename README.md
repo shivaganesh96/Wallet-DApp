@@ -10,6 +10,14 @@ A basic DApp wallet for the Ethereum Network.
 [![Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
 
 
+## Installations
+	** Note: include build directions for all machines **
+
+	- Go-Ethereum (and all things needed for that)
+	- Node, npm, homebrew (essentials all programmers should have)
+	- Meteor (and all of the associated packages)
+	
+
 ## Development
 
 Start an `geth` node and and the app using meteor and open http://localhost:3000 in your browser:
