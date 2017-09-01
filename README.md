@@ -1,18 +1,28 @@
-# Ethereum Wallet Ðapp
+# Wallet Ðapp
 
-The Ethereum wallet.
+A basic DApp wallet for the Ethereum Network. 
 
+	- ** NOTE ** This is not an official release.
+	More updates to come in the near future! For now this can be run on a local 
+	machine, or used for learning purposes. LICENSE specifies use of the code contained in this repository.
+
+(Disregard this build status bar. This is not to be considered a finished project. Leave this here for later because it will be good documentation)
 [![Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
 
-**NOTE** The wallet is not yet official released,
-can contain severe bugs!
 
+## Installations
+	** Note: include build directions for all machines **
+
+	- Go-Ethereum (and all things needed for that)
+	- Node, npm, homebrew (essentials all programmers should have)
+	- Meteor (and all of the associated packages)
+	
 
 ## Development
 
 Start an `geth` node and and the app using meteor and open http://localhost:3000 in your browser:
 
-    $ geth --rpccorsdomain "http://localhost:3000" --rpc --unlock <your account>
+    $ geth --rpccorsdomain "http://localhost:3000" --rpc --port 0
 
 Starting the wallet dapp using [Meteor](https://meteor.com/install)
 
@@ -41,18 +51,9 @@ To make routing work properly you need to build it using:
 And start a local server which points with its document root into the `../build` folder,
 so that you can open the app using `http://localhost:80/`
 
-To deploy them to the **wallet.ethereum.org** site, execute these commands (from the app folder):
-
-    git checkout gh-pages
-    git merge develop
-    cd app
-    meteor-build-client ../build --path "/"
-          
-And push (or PR) your changes to the gh-pages branch.
-
 
 ***
-
+(Not our stats... Utilize this later for documentation)
 ## Gas usage statistics
 
 - Deploy original wallet: 1 230 162
