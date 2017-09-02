@@ -7,6 +7,7 @@ A basic DApp wallet for the Ethereum Network.
 	machine, or used for learning purposes. LICENSE specifies use of the code contained in this repository.
 
 (Disregard this build status bar. This is not to be considered a finished project. Leave this here for later because it will be good documentation)
+
 [![Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
 
 
