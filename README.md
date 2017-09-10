@@ -1,4 +1,4 @@
-# Wallet Ðapp
+# Fermion Wallet Dapp
 
 A basic DApp wallet for the Ethereum Network. 
 
