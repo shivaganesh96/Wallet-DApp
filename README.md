@@ -6,9 +6,9 @@ A basic DApp wallet for the Ethereum Network.
 	More updates to come in the near future! For now this can be run on a local 
 	machine, or used for learning purposes. LICENSE specifies use of the code contained in this repository.
 
-(Disregard this build status bar. This is not to be considered a finished project. Leave this here for later because it will be good documentation)
+(Disregard the build status bar. This is not to be considered a finished project. Leave this here for later because it will be good documentation)
 
-[![//Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
+[![Build Status](https://travis-ci.org/ethereum/meteor-dapp-wallet.svg?branch=master)](https://travis-ci.org/ethereum/meteor-dapp-wallet)
 
 
 ## Installations
@@ -54,9 +54,11 @@ so that you can open the app using `http://localhost:80/`
 
 
 ***
-(Not our stats... Utilize this later for documentation)
-## Gas usage statistics
+##These are not official Fermion stats
+## (unofficial)Gas usage statistics
 
+(Utilize this section later for official build documentation)
+(based on ethereum wallet Dapp build)
 - Deploy original wallet: 1 230 162
 - Deploy wallet stub: 184 280
 - Simple Wallet transaction: 64 280
